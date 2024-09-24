@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.fs-font{
+    font-family: "Rochester", cursive;
+}
+.thanks{
+position: absolute;
+top: 0;
+left: 0;
+
+}

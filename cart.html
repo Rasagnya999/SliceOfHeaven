@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="stick "  >
+        <nav 
+            class="navbar navbar-expand-lg  " style="background-image: url(https://t3.ftcdn.net/jpg/03/64/51/04/360_F_364510436_CQK8xG8LxZWptWulXXhG1WSdKkmEfrsi.jpg); background-repeat: no-repeat; background-size: cover;"  
+        >
+            <div class=" container-fluid" >
+                <a class="navbar-brand  fs-logo fs-2" href="index.html"><span><img src="assets/image 180.png" style="width: 50%; height: 100px; padding:15px;"  alt=""></span><span style="color: maroon ">Slice</span><span style="color: maroon;">Of</span><span style="color: maroon;">Heaven</span><span>
+                  
+                </span></a>
+               
+                <button
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+             
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item fw-bold  fs-4 navitem">
+                            <a class="nav-link " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item fw-bold  fs-4 navitem">
+                            <a class="nav-link" href="custom.html">Personalized Order</a>
+                        </li>
+                        <li class="nav-item fw-bold  fs-4 navitem">
+                            <a class="nav-link" href="explore.html">Explore</a>
+                        </li>
+                        <li class="nav-item fw-bold  fs-4 navitem">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item fw-bold  fs-5" >
+                            <a class="nav-link fs-font" href="#" data-bs-target="#login" data-bs-toggle="modal" data-bs-dismiss="modal">
+                                <button  class=""                         style="border: none; background-color: maroon; color: white; width: 80px; height:35px; display: flex; justify-content: center; align-items: center; border-radius: 5px;" >LogIn
+                                </button>
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold  fs-4" >
+                            <a class="nav-link" id="additem"              href="cart.html">
+                                <button  class="  "                         style="border: none;  color: white;  display: flex; justify-content: center; align-items: center; background-color: maroon; border-radius: 5px; "><i class="bi bi-cart"></i><span class="" style="width: 10px; height: 20px; color: yellow;">0</span>
+                                </button>
+                            </a> 
+                            
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        
+    </header> 
+    <section class="container-fluid">
+     <div class="col-12"> 
+     <div class="row" style="display: flex; justify-content: center; align-items: center;">
+       <h3 class="fs-font mt-2 w-100 h-50"                 style=" text-align: center; color: beige; background-color: maroon; border-radius: 30px;">My Cart</h3>
+     </div>
+     </div>
+    </section>
+    <!--Modal start-->
+  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 fs-font" id="exampleModalLabel">LogIn</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="index.html"   onsubmit="return signup()">
+                <div class="form-group mb-4">
+                <input type="text" id="Email" name="Email" class="form-control fs-font" placeholder="Enter Email I'd" >
+                <p class="para fs-font" style="color: red;"                  id="EmailError">
+
+                </p>
+                <p class="para fs-font" style="color: green;"                  id="EmailError1">
+
+                </p>
+                </div>
+                <div class="text-center">
+                <button type="submit" id="getotp" class="start w-100 fw-bold fs-font" style="border-radius: 50px; border: 0px; height: 40px; background-color: maroon; color: white;">Get Started</button>
+                </div>
+                </form>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <!--Modal end-->
+ <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.fs-logo{
+ font-family: "Rochester", cursive;
+    font-weight: 600;
+  font-style: normal;
+}
+.navitem{
+  font-family: "Rochester", cursive;
+   
+}
+.navitem a{
+  
+   color: black;
+}
+.navitem a:hover{
+  
+  color: maroon;
+}
+
+.fs-font{
+  font-family: "Rochester", cursive;
+}
